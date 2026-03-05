@@ -30,9 +30,14 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               Download on Google Play
-            </a>
-              Features
-            </a>
+              </a>
+
+              <a
+                href="#features"
+                className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white"
+              >
+                Features
+              </a>
             <a
               href="#download"
               className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
