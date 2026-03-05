@@ -172,7 +172,8 @@ export default function Home() {
                 Download on Google Play
               </a>
               <a
-                href="mailto:support@viewvers.app"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=support@viewvers.app"
+                target="_blank"
                 className="rounded-xl border border-white/20 px-5 py-3 text-sm font-semibold"
               >
                 Contact Us
