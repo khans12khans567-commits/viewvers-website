@@ -9,7 +9,6 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
 
-          {/* Logo */}
           <div className="flex items-center gap-3">
             <Image
               src="/images/logo.png"
@@ -25,28 +24,17 @@ export default function Home() {
             </div>
           </div>
 
-
-          {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-6">
 
-            <a
-              href="#features"
-              className="text-sm font-medium text-zinc-800 hover:text-black"
-            >
+            <a href="#features" className="text-sm font-medium text-zinc-800 hover:text-black">
               Features
             </a>
 
-            <a
-              href="/privacy"
-              className="text-sm font-medium text-zinc-800 hover:text-black"
-            >
+            <a href="/privacy" className="text-sm font-medium text-zinc-800 hover:text-black">
               Privacy
             </a>
 
-            <a
-              href="/delete-account"
-              className="text-sm font-medium text-zinc-800 hover:text-black"
-            >
+            <a href="/delete-account" className="text-sm font-medium text-zinc-800 hover:text-black">
               Delete Account
             </a>
 
@@ -59,8 +47,6 @@ export default function Home() {
 
           </div>
 
-
-          {/* Mobile Download button */}
           <a
             href="#download"
             className="md:hidden rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
@@ -90,7 +76,7 @@ export default function Home() {
           <a
             href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
             target="_blank"
-            className="rounded-xl bg-[#3D4C46] px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
+            className="rounded-xl bg-[#3D4C46] px-6 py-3 text-sm font-semibold text-white"
           >
             Download on Google Play
           </a>
@@ -104,6 +90,30 @@ export default function Home() {
 
         </div>
 
+      </section>
+
+
+      {/* Trust Section */}
+      <section className="border-t bg-zinc-50">
+        <div className="mx-auto max-w-6xl px-5 py-14 text-center">
+
+          <div className="grid gap-6 md:grid-cols-3 text-zinc-700">
+
+            <div>
+              ⭐ Explore hundreds of famous places
+            </div>
+
+            <div>
+              🌍 Discover destinations worldwide
+            </div>
+
+            <div>
+              🍽 Find nearby restaurants & malls
+            </div>
+
+          </div>
+
+        </div>
       </section>
 
 
@@ -122,22 +132,22 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             <img
-            src="/images/screenshot1.jpg"
-            alt="app screenshot"
-            className="rounded-xl border w-80 mx-auto shadow-lg"
+              src="/images/screenshot1.jpg"
+              alt="app screenshot"
+              className="rounded-xl border w-full max-w-sm mx-auto shadow-lg"
             />
 
             <img
-            src="/images/screenshot2.jpg"
-            alt="app screenshot"
-            className="rounded-xl border w-80 mx-auto shadow-lg"
+              src="/images/screenshot2.jpg"
+              alt="app screenshot"
+              className="rounded-xl border w-full max-w-sm mx-auto shadow-lg"
             />
 
-           <img
-           src="/images/screenshot3.jpg"
-           alt="app screenshot"
-           className="rounded-xl border w-80 mx-auto shadow-lg"
-           />
+            <img
+              src="/images/screenshot3.jpg"
+              alt="app screenshot"
+              className="rounded-xl border w-full max-w-sm mx-auto shadow-lg"
+            />
 
           </div>
 
@@ -169,7 +179,7 @@ export default function Home() {
             ].map((d) => (
               <div
                 key={d.name}
-                className="overflow-hidden rounded-xl border bg-white hover:shadow-sm"
+                className="overflow-hidden rounded-xl border bg-white hover:shadow-lg"
               >
 
                 <Image
@@ -197,26 +207,34 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-5 py-20">
 
           <h2 className="text-center text-2xl font-bold">
-            What Viewvers includes
+            Why travelers use Viewvers
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
-            {[
-              "Discover famous places",
-              "Nearby restaurants",
-              "Shopping malls",
-              "Family activities",
-              "Weather forecast",
-              "Hotel recommendations",
-            ].map((f) => (
-              <div
-                key={f}
-                className="rounded-xl border bg-white p-6 text-center"
-              >
-                {f}
-              </div>
-            ))}
+            <div className="rounded-xl border bg-white p-6 text-center">
+              🌍 Discover famous places worldwide
+            </div>
+
+            <div className="rounded-xl border bg-white p-6 text-center">
+              🍽 Find nearby restaurants
+            </div>
+
+            <div className="rounded-xl border bg-white p-6 text-center">
+              👨‍👩‍👧 Explore family activities
+            </div>
+
+            <div className="rounded-xl border bg-white p-6 text-center">
+              🛍 Discover shopping malls
+            </div>
+
+            <div className="rounded-xl border bg-white p-6 text-center">
+              🌦 Weather forecast
+            </div>
+
+            <div className="rounded-xl border bg-white p-6 text-center">
+              🏨 Hotel recommendations
+            </div>
 
           </div>
 
@@ -295,6 +313,18 @@ export default function Home() {
 
         </div>
       </footer>
+
+
+      {/* Sticky Mobile Download */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t bg-white p-3 md:hidden">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
+          target="_blank"
+          className="block rounded-xl bg-[#3D4C46] py-3 text-center text-sm font-semibold text-white"
+        >
+          Download Viewvers
+        </a>
+      </div>
 
     </main>
   );
