@@ -100,6 +100,7 @@ export default function Home() {
               width={400}
               height={800}
               className="rounded-xl border"
+              unoptimized
             />
 
             <Image
@@ -108,6 +109,7 @@ export default function Home() {
               width={400}
               height={800}
               className="rounded-xl border"
+              unoptimized
             />
 
             <Image
@@ -116,6 +118,7 @@ export default function Home() {
               width={400}
               height={800}
               className="rounded-xl border"
+              unoptimized
             />
 
           </div>
