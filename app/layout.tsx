@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Viewvers – Discover Places, Compare Destinations & Plan Trips",
   description:
     "Discover famous places, compare destinations, and plan your next trip with Viewvers. Explore restaurants, shopping malls, and family-friendly activities worldwide.",
+    icons: {
+        icon: "/favicon.ico",
+      },
 };
 
 export default function RootLayout({
