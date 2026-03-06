@@ -133,11 +133,11 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             {[
-              { name: "Paris", image: "/images/paris.jpg" },
+              { name: "France", image: "/images/france.jpg" },
               { name: "Dubai", image: "/images/dubai.jpg" },
-              { name: "Tokyo", image: "/images/tokyo.jpg" },
-              { name: "New York", image: "/images/newyork.jpg" },
-              { name: "Rome", image: "/images/rome.jpg" },
+              { name: "Japan", image: "/images/japan.jpg" },
+              { name: "USA", image: "/images/usa.jpg" },
+              { name: "Italy", image: "/images/italy.jpg" },
               { name: "Singapore", image: "/images/singapore.jpg" },
             ].map((d) => (
               <div
