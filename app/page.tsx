@@ -26,19 +26,33 @@ export default function Home() {
 
           <div className="flex items-center gap-3">
 
-            <a
-              href="#features"
-              className="text-sm font-medium text-zinc-700 hover:text-black"
-            >
-              Features
-            </a>
+          <a
+            href="#features"
+            className="text-sm font-medium text-zinc-700 hover:text-black"
+          >
+            Features
+          </a>
 
-            <a
-              href="#download"
-              className="rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white hover:opacity-90"
-            >
-              Download
-            </a>
+          <a
+            href="/privacy"
+            className="text-sm font-medium text-zinc-700 hover:text-black"
+          >
+            Privacy
+          </a>
+
+          <a
+            href="/delete-account"
+            className="text-sm font-medium text-zinc-700 hover:text-black"
+          >
+            Delete Account
+          </a>
+
+          <a
+            href="#download"
+            className="rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
+          >
+            Download
+          </a>
 
           </div>
         </div>
