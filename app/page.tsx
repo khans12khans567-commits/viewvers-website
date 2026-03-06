@@ -94,32 +94,23 @@ export default function Home() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
-            <Image
-              src="/images/screenshot1.jpeg"
-              alt="app screenshot"
-              width={400}
-              height={800}
-              className="rounded-xl border"
-              unoptimized
+            <img
+            src="/images/screenshot1.jpeg"
+            alt="app screenshot"
+            className="rounded-xl border"
             />
 
-            <Image
-              src="/images/screenshot2.jpeg"
-              alt="app screenshot"
-              width={400}
-              height={800}
-              className="rounded-xl border"
-              unoptimized
+            <img
+            src="/images/screenshot2.jpeg"
+            alt="app screenshot"
+            className="rounded-xl border"
             />
 
-            <Image
-              src="/images/screenshot3.jpeg"
-              alt="app screenshot"
-              width={400}
-              height={800}
-              className="rounded-xl border"
-              unoptimized
-            />
+           <img
+           src="/images/screenshot3.jpeg"
+           alt="app screenshot"
+           className="rounded-xl border"
+           />
 
           </div>
 
