@@ -136,10 +136,15 @@ export default function Home() {
                   { title: 'Shopping & Malls', desc: 'Best malls with highlights & ratings' },
                   { title: 'Family Activities', desc: 'Kid-friendly activities nearby' },
                 ].map((item) => (
-                  <div key={item.title} className="rounded-xl border p-3">
+                  <a
+                    key={item.title}
+                    href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
+                    target="_blank"
+                    className="block rounded-xl border p-3 hover:bg-zinc-50 transition"
+                  >
                     <div className="text-sm font-semibold">{item.title}</div>
                     <div className="text-xs text-zinc-500">{item.desc}</div>
-                  </div>
+                  </a>
                 ))}
 
               </div>
@@ -175,10 +180,15 @@ export default function Home() {
               { title: 'Hotels', desc: 'Hotel list and booking links for convenience.' },
               { title: 'Fast UI', desc: 'Modern design with smooth navigation.' },
             ].map((f) => (
-              <div key={f.title} className="rounded-2xl border bg-white p-5">
+              <a
+                key={f.title}
+                href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
+                target="_blank"
+                className="block rounded-2xl border bg-white p-5 hover:bg-zinc-50 transition"
+              >
                 <div className="text-base font-semibold">{f.title}</div>
                 <div className="mt-1 text-sm text-zinc-600">{f.desc}</div>
-              </div>
+              </a>
             ))}
 
           </div>
@@ -222,7 +232,7 @@ export default function Home() {
           </div>
 
           <p className="mt-6 text-center text-xs text-zinc-500">
-            © {new Date().getFullYear()} Viewvers • Built with Next.js
+            ©️ {new Date().getFullYear()} Viewvers • Built with Next.js
           </p>
 
         </div>
