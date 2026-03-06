@@ -95,7 +95,7 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             <Image
-              src="/images/screenshot1.jpg"
+              src="/images/screenshot1.jpeg"
               alt="app screenshot"
               width={400}
               height={800}
@@ -103,7 +103,7 @@ export default function Home() {
             />
 
             <Image
-              src="/images/screenshot2.jpg"
+              src="/images/screenshot2.jpeg"
               alt="app screenshot"
               width={400}
               height={800}
@@ -111,7 +111,7 @@ export default function Home() {
             />
 
             <Image
-              src="/images/screenshot3.jpg"
+              src="/images/screenshot3.jpeg"
               alt="app screenshot"
               width={400}
               height={800}
