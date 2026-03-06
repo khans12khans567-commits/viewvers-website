@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
 
           <a
             href="#features"
@@ -48,10 +48,10 @@ export default function Home() {
           </a>
 
           <a
-            href="#download"
-            className="rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
+          href="#download"
+          className="md:ml-4 rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
           >
-            Download
+          Download
           </a>
 
           </div>
