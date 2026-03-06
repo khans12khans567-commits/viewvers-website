@@ -9,12 +9,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
 
+          {/* Logo */}
           <div className="flex items-center gap-3">
             <Image
               src="/images/logo.png"
               alt="Viewvers"
-              width={40}
-              height={40}
+              width={36}
+              height={36}
               className="rounded-lg"
             />
 
@@ -24,37 +25,49 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-4">
 
-          <a
-            href="#features"
-            className="text-sm font-medium text-zinc-800 hover:text-black"
-          >
-            Features
-          </a>
+          {/* Desktop menu */}
+          <div className="hidden md:flex items-center gap-6">
 
-          <a
-            href="/privacy"
-            className="text-sm font-medium text-zinc-800 hover:text-black"
-          >
-            Privacy
-          </a>
+            <a
+              href="#features"
+              className="text-sm font-medium text-zinc-800 hover:text-black"
+            >
+              Features
+            </a>
 
-          <a
-            href="/delete-account"
-            className="text-sm font-medium text-zinc-800 hover:text-black"
-          >
-            Delete Account
-          </a>
+            <a
+              href="/privacy"
+              className="text-sm font-medium text-zinc-800 hover:text-black"
+            >
+              Privacy
+            </a>
 
-          <a
-          href="#download"
-          className="md:ml-4 rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
-          >
-          Download
-          </a>
+            <a
+              href="/delete-account"
+              className="text-sm font-medium text-zinc-800 hover:text-black"
+            >
+              Delete Account
+            </a>
+
+            <a
+              href="#download"
+              className="rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
+            >
+              Download
+            </a>
 
           </div>
+
+
+          {/* Mobile Download button */}
+          <a
+            href="#download"
+            className="md:hidden rounded-lg bg-[#3D4C46] px-4 py-2 text-sm font-medium text-white"
+          >
+            Download
+          </a>
+
         </div>
       </header>
 
