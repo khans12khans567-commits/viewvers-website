@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Viewvers - Global Travel Discovery",
-  description: "Discover places. Compare destinations. Plan your next trip."
+  title: "Viewvers – Discover Places, Compare Destinations & Plan Trips",
+  description:
+    "Discover famous places, compare destinations, and plan your next trip with Viewvers. Explore restaurants, shopping malls, and family-friendly activities worldwide.",
 };
 
 export default function RootLayout({
