@@ -97,19 +97,19 @@ export default function Home() {
             <img
             src="/images/screenshot1.jpg"
             alt="app screenshot"
-            className="rounded-xl border w-full"
+            className="rounded-xl border w-80 mx-auto shadow-lg"
             />
 
             <img
             src="/images/screenshot2.jpg"
             alt="app screenshot"
-            className="rounded-xl border w-full"
+            className="rounded-xl border w-80 mx-auto shadow-lg"
             />
 
            <img
            src="/images/screenshot3.jpg"
            alt="app screenshot"
-           className="rounded-xl border w-full"
+           className="rounded-xl border w-80 mx-auto shadow-lg"
            />
 
           </div>
