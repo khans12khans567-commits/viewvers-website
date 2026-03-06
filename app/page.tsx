@@ -95,19 +95,19 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             <img
-            src="/images/screenshot1.jpeg"
+            src="/images/screenshot1.jpg"
             alt="app screenshot"
             className="rounded-xl border w-full"
             />
 
             <img
-            src="/images/screenshot2.jpeg"
+            src="/images/screenshot2.jpg"
             alt="app screenshot"
             className="rounded-xl border w-full"
             />
 
            <img
-           src="/images/screenshot3.jpeg"
+           src="/images/screenshot3.jpg"
            alt="app screenshot"
            className="rounded-xl border w-full"
            />
