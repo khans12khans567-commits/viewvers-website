@@ -24,25 +24,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
 
           <a
             href="#features"
-            className="text-sm font-medium text-zinc-700 hover:text-black"
+            className="text-sm font-medium text-zinc-800 hover:text-black"
           >
             Features
           </a>
 
           <a
             href="/privacy"
-            className="text-sm font-medium text-zinc-700 hover:text-black"
+            className="text-sm font-medium text-zinc-800 hover:text-black"
           >
             Privacy
           </a>
 
           <a
             href="/delete-account"
-            className="text-sm font-medium text-zinc-700 hover:text-black"
+            className="text-sm font-medium text-zinc-800 hover:text-black"
           >
             Delete Account
           </a>
