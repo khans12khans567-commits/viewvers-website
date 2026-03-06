@@ -55,7 +55,7 @@ export default function Home() {
 
         <p className="mx-auto mt-5 max-w-xl text-zinc-600">
           Viewvers helps travelers explore famous tourist spots and discover nearby
-          restaurants, shopping malls, and family-friendly activities in one app.
+          restaurants, shopping malls and family-friendly activities in one app.
         </p>
 
         <div className="mt-8 flex justify-center gap-4">
@@ -63,7 +63,6 @@ export default function Home() {
           <a
             href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
             target="_blank"
-            rel="noopener noreferrer"
             className="rounded-xl bg-[#3D4C46] px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
           >
             Download on Google Play
@@ -81,56 +80,125 @@ export default function Home() {
       </section>
 
 
+      {/* Screenshots */}
+      <section className="border-t">
+        <div className="mx-auto max-w-6xl px-5 py-20">
+
+          <h2 className="text-center text-2xl font-bold">
+            App Screenshots
+          </h2>
+
+          <p className="mt-2 text-center text-zinc-600">
+            A quick look at the Viewvers app experience.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+            <Image
+              src="/images/screenshot1.jpg"
+              alt="app screenshot"
+              width={400}
+              height={800}
+              className="rounded-xl border"
+            />
+
+            <Image
+              src="/images/screenshot2.jpg"
+              alt="app screenshot"
+              width={400}
+              height={800}
+              className="rounded-xl border"
+            />
+
+            <Image
+              src="/images/screenshot3.jpg"
+              alt="app screenshot"
+              width={400}
+              height={800}
+              className="rounded-xl border"
+            />
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* Destinations */}
+      <section className="border-t bg-zinc-50">
+        <div className="mx-auto max-w-6xl px-5 py-20">
+
+          <h2 className="text-center text-2xl font-bold">
+            Popular Destinations
+          </h2>
+
+          <p className="mt-2 text-center text-zinc-600">
+            Discover famous travel destinations available in Viewvers.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+            {[
+              { name: "Paris", image: "/images/paris.jpg" },
+              { name: "Dubai", image: "/images/dubai.jpg" },
+              { name: "Tokyo", image: "/images/tokyo.jpg" },
+              { name: "New York", image: "/images/newyork.jpg" },
+              { name: "Rome", image: "/images/rome.jpg" },
+              { name: "Singapore", image: "/images/singapore.jpg" },
+            ].map((d) => (
+              <div
+                key={d.name}
+                className="overflow-hidden rounded-xl border bg-white hover:shadow-sm"
+              >
+
+                <Image
+                  src={d.image}
+                  alt={d.name}
+                  width={400}
+                  height={250}
+                  className="h-48 w-full object-cover"
+                />
+
+                <div className="p-4 font-semibold">
+                  {d.name}
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
+
+
       {/* Features */}
-      <section id="features" className="border-t bg-zinc-50">
+      <section id="features" className="border-t">
         <div className="mx-auto max-w-6xl px-5 py-20">
 
           <h2 className="text-center text-2xl font-bold">
             What Viewvers includes
           </h2>
 
-          <p className="mt-2 text-center text-zinc-600">
-            Built for discovery, comparison and smooth travel planning.
-          </p>
-
           <div className="mt-12 grid gap-6 md:grid-cols-3">
 
             {[
-              {
-                title: "Discover",
-                desc: "Explore famous tourist places with images and detailed information.",
-              },
-              {
-                title: "Nearby",
-                desc: "Find restaurants, shopping malls and family activities nearby.",
-              },
-              {
-                title: "Compare",
-                desc: "Compare two destinations side-by-side before planning your trip.",
-              },
-              {
-                title: "Weather",
-                desc: "Check weather forecasts before visiting any destination.",
-              },
-              {
-                title: "Hotels",
-                desc: "Browse hotels with booking links for convenient travel planning.",
-              },
-              {
-                title: "Fast & Simple",
-                desc: "Clean design with smooth navigation and quick loading.",
-              },
+              "Discover famous places",
+              "Nearby restaurants",
+              "Shopping malls",
+              "Family activities",
+              "Weather forecast",
+              "Hotel recommendations",
             ].map((f) => (
               <div
-                key={f.title}
-                className="rounded-xl border bg-white p-6 transition hover:shadow-sm"
+                key={f}
+                className="rounded-xl border bg-white p-6 text-center"
               >
-                <div className="font-semibold">{f.title}</div>
-                <div className="mt-2 text-sm text-zinc-600">{f.desc}</div>
+                {f}
               </div>
             ))}
 
           </div>
+
         </div>
       </section>
 
@@ -149,36 +217,63 @@ export default function Home() {
               Install the app and start discovering places around the world.
             </p>
 
-            <div className="mt-6 flex justify-center gap-4">
+            <div className="mt-6">
 
               <a
                 href="https://play.google.com/store/apps/details?id=com.viewvers.travel"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-[#3D4C46]"
               >
                 Download on Google Play
-              </a>
-
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=support@viewvers.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl border border-white/30 px-6 py-3 text-sm font-semibold"
-              >
-                Contact
               </a>
 
             </div>
 
           </div>
 
-          <p className="mt-8 text-xs text-zinc-500">
+        </div>
+      </section>
+
+
+      {/* Footer */}
+      <footer className="border-t bg-zinc-50">
+        <div className="mx-auto max-w-6xl px-5 py-10 text-center text-sm text-zinc-600">
+
+          <div className="font-semibold text-zinc-800">
+            Viewvers
+          </div>
+
+          <p className="mt-2">
+            Travel discovery app for exploring destinations, restaurants,
+            malls and family activities.
+          </p>
+
+          <div className="mt-4 flex justify-center gap-6">
+
+            <a href="#features" className="hover:text-black">
+              Features
+            </a>
+
+            <a href="#download" className="hover:text-black">
+              Download
+            </a>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@viewvers.app"
+              target="_blank"
+              className="hover:text-black"
+            >
+              Contact
+            </a>
+
+          </div>
+
+          <p className="mt-6 text-xs">
             © {new Date().getFullYear()} Viewvers
           </p>
 
         </div>
-      </section>
+      </footer>
 
     </main>
   );
